@@ -5,7 +5,7 @@ spring:
     name: blog-app
   datasource:
     password: admin@123
-    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=blog-app
+    url: jdbc:postgresql://localhost:5432/postgres?currentSchema=blogdb
     username: postgres
   jpa:
     hibernate:

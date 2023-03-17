@@ -1,13 +1,21 @@
 package com.nomad.k8example.entity;
 
 import jakarta.persistence.*;
+import lombok.AllArgsConstructor;
+import lombok.Builder;
+import lombok.Data;
+import lombok.NoArgsConstructor;
 
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
 
 @Entity
-@Table(name="Blog")
+@Table(name="blog_data")
+@Data
+@NoArgsConstructor
+@AllArgsConstructor
+@Builder
 public class BlogData {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
@@ -34,6 +42,6 @@ public class BlogData {
     @ManyToOne(targetEntity = User.class, cascade = CascadeType.ALL)
     private User user;
 
-    @OneToMany(targetEntity = Comment.class, cascade = CascadeType.ALL)
-    private List<Comment> comments;
+//    @OneToMany(targetEntity = Comment.class, cascade = CascadeType.ALL)
+//    private List<Comment> comments;
 }

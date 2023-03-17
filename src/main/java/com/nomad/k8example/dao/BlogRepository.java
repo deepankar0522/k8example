@@ -4,6 +4,6 @@ import com.nomad.k8example.dto.BlogDto;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BlogDao {
+public interface BlogRepository {
     BlogDto getBlogs();
 }
