@@ -1,6 +1,6 @@
 package com.nomad.k8example.dto;
 
-import com.nomad.k8example.entity.BlogData;
+import com.nomad.k8example.entity.Blog;
 import com.nomad.k8example.entity.Comment;
 
 import java.util.ArrayList;
@@ -11,7 +11,7 @@ public class User {
     private String password;
     private String email;
     private String fullName;
-    private List<BlogData> blogs = new ArrayList<>();
+    private List<Blog> blogs = new ArrayList<>();
     private List<Comment> comments = new ArrayList<>();
 
     public String getUsername() {
@@ -46,11 +46,11 @@ public class User {
         this.fullName = fullName;
     }
 
-    public List<BlogData> getBlogs() {
+    public List<Blog> getBlogs() {
         return blogs;
     }
 
-    public void setBlogs(List<BlogData> blogs) {
+    public void setBlogs(List<Blog> blogs) {
         this.blogs = blogs;
     }
 

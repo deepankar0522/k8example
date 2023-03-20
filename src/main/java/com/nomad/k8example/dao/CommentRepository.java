@@ -1,11 +1,10 @@
 package com.nomad.k8example.dao;
 
-import com.nomad.k8example.entity.Blog;
+import com.nomad.k8example.entity.Comment;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;
 
 @Repository
-public interface BlogRepository extends JpaRepository<Blog, Long> {
+public interface CommentRepository extends JpaRepository<Comment, Integer> {
 
-    Blog findByTitle(String title);
 }
